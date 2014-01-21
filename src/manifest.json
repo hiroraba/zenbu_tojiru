@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Zenbu Tojiru",
+  "version": "0.0.1",
+  "description": "Close All Tabs",
+  "background": {
+    "persistent": true,
+    "scripts": ["javascript/jquery-1.10.2.min.js", "javascript/bg.js"]
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+}
