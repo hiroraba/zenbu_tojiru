@@ -10,9 +10,7 @@ chrome.tabs.onRemoved.addListener(function(tabId, removeInfo){
 
 function sendTabs(){
   chrome.windows.getAll({populate: true}, function(windows){
-    var receiverIds = new Array();
     var tabs = new Array();
-
     jQuery.each(windows, function(win_idx, win){
       jQuery.each(win.tabs, function(tab_idx, tab){
 	if(tab.url.indexOf("chrome://") != -1){
